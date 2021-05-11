@@ -1,5 +1,5 @@
 package com.akmere.mylibrary
 
 interface UUIDFactory {
-    fun create(): UUIDGenerator
+    fun create(): Generator<String>
 }
