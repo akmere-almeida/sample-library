@@ -1,5 +1,13 @@
 package com.akmere.mylibrary
 
-abstract class UUIDGenerator{
-    abstract fun generate(): String
+import java.util.UUID
+
+internal object UUIDGenerator : Generator<String>() {
+    private var uuid: String? = null
+    override fun generate(): String {
+        if (uuid.isNullOrEmpty())
+            uuid = UUID.randomUUID().toString()
+
+        return uuid!!
+    }
 }
