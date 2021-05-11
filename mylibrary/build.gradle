@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
+    id "com.jfrog.artifactory" version "4.21.0"
 }
 
 android {
@@ -10,8 +12,6 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -41,4 +41,92 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+
+publishing {
+
+    publications {
+
+        aar(MavenPublication) {
+
+            // from components.java
+
+            groupId = "com.akmere.sample_library"
+
+            artifactId = project.getName()
+
+            version = "1.0.0"
+
+            // Tell maven to prepare the generated "*.aar" file for publishing
+
+            artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+
+        }
+
+    }
+
+}
+
+artifactoryPublish {
+
+    publications(publishing.publications.aar)
+
+}
+
+
+artifactory {
+
+    contextUrl = 'https://samplelibrary.jfrog.io/artifactory'
+
+    publish {
+
+        repository {
+
+            repoKey = 'sample' // The Artifactory repository key to publish to
+
+            username = "akmere" // The publisher user name
+
+            password = "lp5n4k3xD_" // The publisher password
+
+            // This is an optional section for configuring Ivy publication (when publishIvy = true).
+
+            defaults {
+                // Tell the Artifactory Plugin which artifacts should be published to Artifactory.
+                publications('aar')
+                publishArtifacts = true
+
+                // Properties to be attached to the published artifacts.
+                properties = ['qa.level': 'basic', 'dev.team': 'core']
+                // Publish generated POM files to Artifactory (true by default)
+                publishPom = true
+                publishIvy = false
+            }
+
+        }
+
+        defaults {
+
+            // Reference to Gradle publications defined in the build script.
+
+            // This is how we tell the Artifactory Plugin which artifacts should be
+
+            // published to Artifactory.
+
+            publications('app', 'aar')
+
+            publishArtifacts = true
+
+
+            // Properties to be attached to the published artifacts.
+
+
+            properties = ['qa.level': 'basic', 'dev.team' : 'core']
+
+
+            publishPom = true // Publish generated POM files to Artifactory (true by default)
+
+        }
+
+    }
+
 }

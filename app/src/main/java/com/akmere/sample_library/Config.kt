@@ -4,9 +4,10 @@ import com.akmere.mylibrary.Factory
 import com.akmere.mylibrary.UUIDFactory
 
 class Config {
+
     private val factory: UUIDFactory = Factory()
 
-    fun test(){
+    fun getId() =
         factory.create().generate()
-    }
+
 }
