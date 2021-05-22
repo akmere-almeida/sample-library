@@ -8,6 +8,6 @@ internal object UUIDGenerator : Generator<String>() {
         if (uuid.isNullOrEmpty())
             uuid = UUID.randomUUID().toString()
 
-        return uuid!!
+        return uuid ?: UUID.randomUUID().toString()
     }
 }
