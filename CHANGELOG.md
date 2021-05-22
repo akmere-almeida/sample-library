@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/akmere-almeida/sample-library/compare/v1.0.19...v1.1.0) (2021-05-22)
+
+
+### Features
+
+* remove unused factory ([24c05ee](https://github.com/akmere-almeida/sample-library/commit/24c05ee6e4047a373786ed2d237ef53c6318c47f))
+* rename ID Generator ([9a12cac](https://github.com/akmere-almeida/sample-library/commit/9a12cac3ca98b41435aeb36c58f4e6f5c438577f))
+
 ### [1.0.19](https://github.com/akmere-almeida/sample-library/compare/v1.0.18...v1.0.19) (2021-05-22)
 
 
