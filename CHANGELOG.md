@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.147](https://github.com/akmere-almeida/sample-library/compare/v1.1.146...v1.1.147) (2021-05-23)
+
 ### [1.1.146](https://github.com/akmere-almeida/sample-library/compare/v1.1.145...v1.1.146) (2021-05-23)
 
 ### [1.1.145](https://github.com/akmere-almeida/sample-library/compare/v1.1.144...v1.1.145) (2021-05-23)
