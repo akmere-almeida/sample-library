@@ -2,17 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [9.10.4](https://github.com/akmere-almeida/sample-library/compare/v9.10.3...v9.10.4) (2021-05-23)
+## 2.0.0 (2021-05-23)
 
-### [9.10.3](https://github.com/akmere-almeida/sample-library/compare/v9.10.2...v9.10.3) (2021-05-23)
 
-### [9.10.2](https://github.com/akmere-almeida/sample-library/compare/v9.10.1...v9.10.2) (2021-05-23)
+### ⚠ BREAKING CHANGES
 
-### [9.10.1](https://github.com/akmere-almeida/sample-library/compare/v9.10.0...v9.10.1) (2021-05-23)
+* test
 
-### [1.1.4](https://github.com/akmere-almeida/sample-library/compare/v1.1.3...v1.1.4) (2021-05-23)
+### Features
 
-### [1.1.3](https://github.com/akmere-almeida/sample-library/compare/v1.1.2...v1.1.3) (2021-05-23)
+* remove unused factory ([24c05ee](https://github.com/akmere-almeida/sample-library/commit/24c05ee6e4047a373786ed2d237ef53c6318c47f))
+* rename ID Generator ([9a12cac](https://github.com/akmere-almeida/sample-library/commit/9a12cac3ca98b41435aeb36c58f4e6f5c438577f))
+* test ([80d3313](https://github.com/akmere-almeida/sample-library/commit/80d33137f90f49c08ba41527c3f7ba34e6866322))
+* update ci ([0e5c706](https://github.com/akmere-almeida/sample-library/commit/0e5c706168c7dd00bf6eb381f9f77f875ebbf524))
+
+
+### Bug Fixes
+
+* add null treatment when generating UUID ([96c06cd](https://github.com/akmere-almeida/sample-library/commit/96c06cdbe693cf732fc91d14cc98308fadb09158))
 
 ## [1.1.0](https://github.com/akmere-almeida/sample-library/compare/v1.0.19...v1.1.0) (2021-05-23)
 
