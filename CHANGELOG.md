@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/akmere-almeida/sample-library/compare/v1.1.172...v2.0.0) (2021-05-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* add test
+* test
+
+### Features
+
+* add test ([c71144e](https://github.com/akmere-almeida/sample-library/commit/c71144eeeeedfc441fc4ac1dcd87233e3df3b5a9))
+* remove test ([54fb694](https://github.com/akmere-almeida/sample-library/commit/54fb6945906b5d20059440245a9eea1eb496afe5))
+* test ([80d3313](https://github.com/akmere-almeida/sample-library/commit/80d33137f90f49c08ba41527c3f7ba34e6866322))
+* update ci ([0e5c706](https://github.com/akmere-almeida/sample-library/commit/0e5c706168c7dd00bf6eb381f9f77f875ebbf524))
+
+
+### Bug Fixes
+
+* remove UUIDFactory.kt ([f17c550](https://github.com/akmere-almeida/sample-library/commit/f17c550202dfd9316eec9cef4be456c24c711299))
+
 ## [3.0.0](https://github.com/akmere-almeida/sample-library/compare/v2.0.0...v3.0.0) (2021-05-24)
 
 
