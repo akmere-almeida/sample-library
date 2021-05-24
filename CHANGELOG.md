@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/akmere-almeida/sample-library/compare/v1.2.0...v1.3.0) (2021-05-24)
+
+
+### Features
+
+* remove test ([c1eb66f](https://github.com/akmere-almeida/sample-library/commit/c1eb66f63d165b178ab2c2d43f6a758d1fd3b385))
+
 ## [1.2.0](https://github.com/akmere-almeida/sample-library/compare/v1.1.0...v1.2.0) (2021-05-24)
 
 
