@@ -1,9 +1,4 @@
 {
-  "skip": {
-    "bump": true,
-    "tag": true,
-    "commit": true
-  },
   "bumpFiles": [
     {
       "filename": "VERSION_TRACKER.json",
