@@ -1,3 +1,13 @@
+import java.nio.file.Paths
 include ':mylibrary'
 include ':app'
 rootProject.name = "sample-library"
+
+if (ext.has('com.akmere.sample-app.path')) {
+    include ':sample-app', ':sample-app:app'
+    def samplePath = Paths.get(ext['com.akmere.sample-app.path'])
+    def relativeSamplePath = project(':').projectDir.toPath().relativize(samplePath)
+    def relativeSampleAppPath = relativeSamplePath.resolve("app")
+    project(':sample-app').projectDir = relativeSamplePath.toFile()
+    project(':sample-app:app').projectDir = relativeSampleAppPath.toFile()
+}
