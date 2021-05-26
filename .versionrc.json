@@ -1,7 +1,7 @@
 {
   "bumpFiles": [
     {
-      "filename": "VERSION_TRACKER.json",
+      "filename": "LIB_VERSION.json",
       "type": "json"
     }
   ],
