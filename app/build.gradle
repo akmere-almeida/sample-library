@@ -7,9 +7,9 @@ repositories {
     maven {
         url 'https://samplelibrary.jfrog.io/artifactory/sample'
         credentials {
-            username = "akmere" // The publisher user name
+            username = "LOCAL_ARTIFACTORY_USER" // The publisher user name
 
-            password = "lp5n4k3xD_" // The publisher password
+            password = "LOCAL_ARTIFACTORY_PASSWORD" // The publisher password
         }
     }
 }
